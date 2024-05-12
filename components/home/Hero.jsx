@@ -5,7 +5,6 @@ const Hero = () => {
     return ( 
         <div className={style.content}>
             <div className={style.container}>
-                
             </div>
         </div>
      );
