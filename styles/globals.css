@@ -2,32 +2,182 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  -webkit-tap-highlight-color: transparent;
+}
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --blue: #0080F7;
+  --dark-blue: #0357a4;
+  --white: #fff;
+  --grey: #3c3c3c;
+  --dark: #161616;
+
+  --fz-xxxs: 11px;
+  --fz-xxs: 12px;
+  --fz-xs: 13px;
+  --fz-sm: 14px;
+  --fz-md: 16px;
+  --fz-lg: 18px;
+  --fz-xl: 20px;
+  --fz-2xl: 22px;
+  --fz-3xl: 2rem;
+  --fz-4xl: 4rem;
+  --fz-5xl: 7rem;
+  --fz-6xl: 12rem;
+
+  --thin: 100;
+  --extra-light: 200;
+  --light: 300;
+  --normal: 400;
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
+  --extra-bold: 800;
+  --black: 900;
+
+  --radius-sm: 7px;
+  --radius: 10px;
+  --radius-lg: 15px;
+  --radius-circle: 50%;
+  --radius-full: 30px;
+
+  --text-height: 22px;
+  --bold-height: 4.2rem;
+  --black-height: 6.5rem;
+
+  --easing: cubic-bezier(0.645, 0.045, 0.355, 1);
+  --transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  scroll-behavior: smooth;
+  width: 100%;
 }
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--white);
+  font-family: "Cairo";
+}
+::-moz-selection {
+  color: var(--black);
+  background: var(--orange);
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+::selection {
+  color: var(--black);
+  background: var(--orange);
+}
+
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  box-shadow: none;
+}
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+}
+::-webkit-scrollbar-track-piece {
+  border: none;
+}
+
+
+/* Fonts faces */
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('../fonts/cairo/Cairo-ExtraLight.eot');
+  src: url('../fonts/cairo/Cairo-ExtraLight.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/cairo/Cairo-ExtraLight.woff2') format('woff2'),
+      url('../fonts/cairo/Cairo-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('../fonts/cairo/Cairo-ExtraBold.eot');
+  src: url('../fonts/cairo/Cairo-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/cairo/Cairo-ExtraBold.woff2') format('woff2'),
+      url('../fonts/cairo/Cairo-ExtraBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('../fonts/cairo/Cairo-Bold.eot');
+  src: url('../fonts/cairo/Cairo-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/cairo/Cairo-Bold.woff2') format('woff2'),
+      url('../fonts/cairo/Cairo-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('../fonts/cairo/Cairo-Medium.eot');
+  src: url('../fonts/cairo/Cairo-Medium.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/cairo/Cairo-Medium.woff2') format('woff2'),
+      url('../fonts/cairo/Cairo-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('../fonts/cairo/Cairo-Light.eot');
+  src: url('../fonts/cairo/Cairo-Light.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/cairo/Cairo-Light.woff2') format('woff2'),
+      url('../fonts/cairo/Cairo-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('../fonts/cairo/Cairo-SemiBold.eot');
+  src: url('../fonts/cairo/Cairo-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/cairo/Cairo-SemiBold.woff2') format('woff2'),
+      url('../fonts/cairo/Cairo-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('../fonts/cairo/Cairo-Regular.eot');
+  src: url('../fonts/cairo/Cairo-Regular.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/cairo/Cairo-Regular.woff2') format('woff2'),
+      url('../fonts/cairo/Cairo-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Cairo';
+  src: url('../fonts/cairo/Cairo-Black.eot');
+  src: url('../fonts/cairo/Cairo-Black.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/cairo/Cairo-Black.woff2') format('woff2'),
+      url('../fonts/cairo/Cairo-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
 }
