@@ -42,7 +42,7 @@ const Services = () => {
   ];
 
   return (
-    <div className={style.content}>
+    <div className={style.content} id="services">
       <div className={style.container}>
         <div className={style.heading}>
           <div>نـحن نقدم مجمـوعة كـاملة من</div>
