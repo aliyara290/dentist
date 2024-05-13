@@ -1,0 +1,33 @@
+.content {
+    width: 100%;
+    background-color: var(--blue);
+    /* height: 65vh; */
+}
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+}
+.part {
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.part:first-child {
+    background-color: var(--white);
+}
+.part div {
+    font-size: 2.8rem;
+    font-weight: 800;
+    color: var(--blue);
+    font-family: 'Expo-Arabic';
+}
+.part img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}

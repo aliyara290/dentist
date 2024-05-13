@@ -1,9 +1,88 @@
 .content {
     width: 100%;
-    height: 80vh;
+    padding: 100px 0;
     background: url('/images/contact.jpg');
     background-position: center;
     background-size: cover;
     background-color: #000;
+    position: relative;
+    background-attachment: fixed;
 }
-.content:
+/* .content::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #000, #00000000);
+} */
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-right: 10%;
+}
+.card {
+    position: relative;
+    z-index: 3;
+    /* height: 400px; */
+    background-color: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 35px;
+    box-shadow: 0 0 20px #00000028;
+}
+.card h1 {
+    font-size: var(--fz-xl);
+    font-family: 'Expo-Arabic';
+    padding-bottom: 10px;
+}
+.card span {
+    font-size: var(--fz-xs);
+    padding-bottom: 30px;
+}
+.row {
+    width: 100%;
+}
+.row input::placeholder {
+    color: var(--grey);
+}
+.row textarea::placeholder {
+    color: var(--grey);
+}
+.row input {
+    width: 320px;
+    height: 45px;
+    background-color: var(--light-blue);
+    margin-bottom: 20px;
+    padding: 5px 20px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.row textarea {
+    width: 320px;
+    height: 100px;
+    background-color: var(--light-blue);
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    resize: none;
+    border-radius: 5px;
+}
+.btn button{
+    background-color: var(--blue);
+    width: 40%;
+    height: 45px;
+    border-radius: 5px;
+    color: var(--white);
+}
+.btn button:hover {
+    background-color: var(--dark-blue);
+}

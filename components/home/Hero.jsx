@@ -3,7 +3,7 @@ import style from '@/styles/home/hero.module.css'
 
 const Hero = () => {
     return ( 
-        <div className={style.content}>
+        <div className={style.content} id='hero'>
             <div className={style.container}>
                 <div className={style.body}>
                     <div>الثقـــــــة و الآمـــــــــان</div>

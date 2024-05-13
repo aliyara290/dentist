@@ -165,6 +165,14 @@ const Testimonial = () => {
                   </svg>
                 </span>
               </div>
+              <div className={style.teeth}>
+                <Image
+                  src={"/images/cards-icon/teeth.png"}
+                  alt="icon"
+                  width={50}
+                  height={50}
+                />
+              </div>
             </div>
             //   </Carousel>
           ))}

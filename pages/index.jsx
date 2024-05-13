@@ -5,6 +5,8 @@ import Important from "@/components/home/Important";
 import Team from "@/components/home/Team";
 import Testimonial from "@/components/home/Testimonial";
 import Contact from "@/components/Contact";
+import Banner from "@/components/home/Banner";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -14,8 +16,10 @@ export default function Home() {
       <Services />
       <Important />
       <Team />
+      <Banner />
       <Testimonial />
       <Contact />
+      <Footer />
     </>
   );
 }
