@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Team = () => {
   return (
-    <div className={style.content}>
+    <div className={style.content} id="team">
       <div className={style.container}>
         <div className={style.heading}>
           <div>شركائك في الرعاية</div>

@@ -25,14 +25,16 @@
 } */
 .body {
     position: absolute;
-    top: 50%;
+    top: 40%;
     right: 5%;
-    transform: translateY(-50%);
+    /* transform: translateY(-30%); */
 }
 .body div {
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     font-weight: 800;
     color: var(--white);
+    font-family: 'Expo-Arabic';
+    text-shadow: 0 0 10px #00000051;
 }
 
 .btn {
@@ -54,6 +56,8 @@
     font-weight: 700;
     line-height: 1;
     padding: 15px 30px;
+    font-family: 'Expo-Arabic';
+
 }
 .btn a:hover {
     color: var(--white);

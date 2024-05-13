@@ -63,7 +63,7 @@ const Testimonial = () => {
   };
 
   return (
-    <div className={style.content}>
+    <div className={style.content} id="testimonial">
       <div className={style.container}>
         <div className={style.heading}>
           <div>ما يقوله عملاؤنا عنا</div>

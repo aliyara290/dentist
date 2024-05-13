@@ -182,3 +182,15 @@ body {
   font-style: normal;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'Expo-Arabic';
+  src: url('../fonts/expo/ExpoArabic-Bold.eot');
+  src: url('../fonts/expo/ExpoArabic-Bold.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/expo/ExpoArabic-Bold.woff2') format('woff2'),
+      url('../fonts/expo/ExpoArabic-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+

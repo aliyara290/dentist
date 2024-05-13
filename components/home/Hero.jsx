@@ -6,9 +6,9 @@ const Hero = () => {
         <div className={style.content}>
             <div className={style.container}>
                 <div className={style.body}>
-                    <div>الثقة و الآمـــــــــــان</div>
-                    <div>أســــاس علاقتنـــــــا</div>
-                    <div>معـــكــــــــــــــــــــــم</div>
+                    <div>الثقـــــــة و الآمـــــــــان</div>
+                    <div>أســــــــــــــــــــــــــــــاس </div>
+                    <div>علاقتنـــــا معـــكــــــــم</div>
                     <div className={style.btn}>
                         <a href="tel:0643569435">إتصــــل بنــــا</a>
                     </div>
