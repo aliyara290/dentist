@@ -50,13 +50,13 @@ const Header = () => {
         <div className={style.links}>
           <ul>
             <li>
-              <a href="#services">خدمـاتنا</a>
+              <a href="#services">خدمــاتنـا</a>
+            </li>
+            <li>
+              <a href="#team">فريـقــنا</a>
             </li>
             <li>
               <a href="#testimonial">أراء العمـلاء</a>
-            </li>
-            <li>
-              <a href="#team">فريـقنا</a>
             </li>
             <li>
               <a href="#contact">تواصـل معنـا</a>

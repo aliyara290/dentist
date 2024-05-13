@@ -64,13 +64,13 @@ body {
   font-family: "Cairo";
 }
 ::-moz-selection {
-  color: var(--black);
-  background: var(--orange);
+  color: var(--white);
+  background: var(--dark-blue);
 }
 
 ::selection {
-  color: var(--black);
-  background: var(--orange);
+  color: var(--white);
+  background: var(--dark-blue);
 }
 
 ::-webkit-scrollbar {
