@@ -6,8 +6,8 @@ const Team = () => {
     <div className={style.content}>
       <div className={style.container}>
         <div className={style.heading}>
-          <div>شركاءك في الرعاية</div>
-          <div>الصحية السنية</div>
+          <div>شركائك في الرعاية</div>
+          <div> في الصحية السنية</div>
         </div>
         <div className={style.cards}>
             <div className={style.card}>
