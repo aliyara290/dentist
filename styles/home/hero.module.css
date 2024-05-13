@@ -23,3 +23,38 @@
     height: 100%;
     background-color: #0000000a;
 } */
+.body {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translateY(-50%);
+}
+.body div {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--white);
+}
+
+.btn {
+    margin-top: 30px;
+    width: max-content;
+    height: max-content;
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color: var(--dark-blue);
+    color: var(--white);
+}
+.btn a {
+    font-size: var(--fz-lg);
+    color: var(--dark-blue);
+    font-weight: 700;
+    line-height: 1;
+    padding: 15px 30px;
+}
+.btn a:hover {
+    color: var(--white);
+}

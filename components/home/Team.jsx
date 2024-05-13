@@ -7,7 +7,7 @@ const Team = () => {
       <div className={style.container}>
         <div className={style.heading}>
           <div>شركائك في الرعاية</div>
-          <div> في الصحية السنية</div>
+          <div> الصحية السنية</div>
         </div>
         <div className={style.cards}>
             <div className={style.card}>
