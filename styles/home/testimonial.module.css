@@ -80,3 +80,9 @@
 .stars span svg {
   fill: var(--blue);
 }
+
+@media (max-width: 850px) {
+  .container {
+      width: 90%;
+  }
+}

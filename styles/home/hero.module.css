@@ -11,12 +11,11 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    /* position: relative; */
     background-attachment: fixed;
 }
 .body {
     position: absolute;
-    top: 40%;
+    top: 37%;
     right: 5%;
     /* transform: translateY(-30%); */
 }
@@ -50,4 +49,20 @@
 }
 .btn a:hover {
     color: var(--white);
+}
+
+@media (max-width: 850px) {
+    .body {
+        display: none;
+    }
+}
+@media (max-width: 600px) {
+    .container {
+        background: url('/images/hero_mobile.jpg');
+        background-size: cover;
+        background-position: center;
+    }
+    .body {
+        display: none;
+    }
 }

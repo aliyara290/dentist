@@ -6,19 +6,19 @@ import "react-multi-carousel/lib/styles.css";
 const Testimonial = () => {
   const testimonials = [
     {
-      img: "/images/team/01.jpg",
+      img: "/images/clients/02.jpg",
       client: "أميرة العوضي",
       description:
         "خدمة متميزة ومتفانية، تجربة رائعة مع العيادة. أوصي بها للجميع.",
     },
     {
-      img: "/images/team/02.jpg",
+      img: "/images/clients/01.jpg",
       client: "محمد أحمد",
       description:
         "لقد كانت تجربة رائعة، فريق العمل متعاون ومتفاني في عملهم. أشعر بالثقة التامة.",
     },
     {
-      img: "/images/team/03.jpg",
+      img: "/images/clients/03.jpg",
       client: "فاطمة عبد الله",
       description:
         "اندهشت بالخدمة الاحترافية والمهنية، العيادة تستحق التقدير والاحترام.",

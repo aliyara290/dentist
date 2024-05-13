@@ -2,6 +2,18 @@ import style from "@/styles/header.module.css";
 import Image from "next/image";
 
 const Header = () => {
+  const handleClick = () => {
+    const navigation = document.querySelector("#navigation");
+    const hamburger = document.querySelector("#hamburger");
+    navigation.classList.toggle(`${style.active}`);
+    hamburger.classList.toggle(`${style.active}`);
+  };
+  const handleCloseMenu = () => {
+    const navigation = document.querySelector("#navigation");
+    const hamburger = document.querySelector("#hamburger");
+    navigation.classList.remove(`${style.active}`);
+    hamburger.classList.remove(`${style.active}`);
+  };
   return (
     <div className={style.content}>
       <div className={style.container}>
@@ -47,21 +59,40 @@ const Header = () => {
             />
           </svg>
         </div>
-        <div className={style.links}>
+        <div className={style.links} id="navigation">
           <ul>
-            <li>
+            <li onClick={() => handleCloseMenu()}>
               <a href="#services">خدمــاتنـا</a>
             </li>
-            <li>
+            <li onClick={() => handleCloseMenu()}>
               <a href="#team">فريـقــنا</a>
             </li>
-            <li>
+            <li onClick={() => handleCloseMenu()}>
               <a href="#testimonial">أراء العمـلاء</a>
             </li>
-            <li>
+            <li onClick={() => handleCloseMenu()}>
               <a href="#contact">تواصـل معنـا</a>
             </li>
           </ul>
+        </div>
+        <div
+          className={style.hamburger}
+          id="hamburger"
+          onClick={() => handleClick()}
+        >
+          <svg
+            id="Layer_1"
+            data-name="Layer 1"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 15 10"
+            width={30}
+            height={30}
+            fill="var(--white)"
+          >
+            <rect width="15" height="2" className={style.bar} />
+            <rect y="4" width="15" height="2" className={style.bar_two} />
+            <rect y="8" width="15" height="2" className={style.bar_three} />
+          </svg>
         </div>
       </div>
     </div>
