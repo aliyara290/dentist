@@ -1,5 +1,6 @@
 import style from "@/styles/home/testimonial.module.css";
 import Image from "next/image";
+import Heading from "@/components/Heading";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
@@ -65,9 +66,12 @@ const Testimonial = () => {
   return (
     <div className={style.content} id="testimonial">
       <div className={style.container}>
-        <div className={style.heading}>
-          <div>ما يقوله عملاؤنا عنا</div>
-        </div>
+      <Heading
+          topHeading={"ما يقوله عملاؤنا"}
+          botHeading={"عنا"}
+          centerHeading={true}
+          showSubHeading={false}
+        />
         <div className={style.cards}>
           {testimonials.map((card, index) => (
             //   <Carousel

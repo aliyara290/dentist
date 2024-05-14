@@ -1,8 +1,8 @@
 .content {
     width: 100%;
     height: 100svh;
-    /* border-bottom: 3px solid var(--blue); */
     box-shadow: 0 0 60px #0000001a;
+    background-color: var(--blue);
 }
 .container {
     width: 100%;

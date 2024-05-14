@@ -1,14 +1,18 @@
 import style from "@/styles/home/team.module.css";
 import Image from "next/image";
+import Heading from "@/components/Heading";
+
 
 const Team = () => {
   return (
     <div className={style.content} id="team">
       <div className={style.container}>
-        <div className={style.heading}>
-          <div>شركائك في الرعاية</div>
-          <div> الصحية السنية</div>
-        </div>
+      <Heading
+          topHeading={"شركائك في الرعاية"}
+          botHeading={"الصحية السنية"}
+          centerHeading={true}
+          showSubHeading={false}
+        />
         <div className={style.cards}>
             <div className={style.card}>
                 <div className={style.pic}>

@@ -40,6 +40,7 @@
   border-radius: 10px;
   box-shadow: 0 0 15px #0000002f;
   background-color: #efefef;
+  opacity: 0;
 }
 .pic img {
   width: 100%;
@@ -51,12 +52,17 @@
   color: var(--blue);
   font-family: "Expo-Arabic";
 }
+.heading h1 {
+  opacity: 0;
+
+}
 .lists {
   padding-top: 30px;
 }
 .lists li {
   display: flex;
   align-items: flex-start;
+  opacity: 0;
 }
 .symbol {
   padding-left: 10px;

@@ -1,7 +1,25 @@
+"use client";
+import { useEffect } from "react";
+import gsap from "gsap";
 import style from "@/styles/header.module.css";
-import Image from "next/image";
 
 const Header = () => {
+  useEffect(() => {
+    gsap.fromTo(
+      ".link__6782",
+      {
+        x: "100%",
+        opacity: 0,
+      },
+      {
+        x: 0,
+        opacity: 1,
+        delay: 0.3,
+        duration: 0.2,
+        stagger: 0.2,
+      }
+    );
+  }, []);
   const handleClick = () => {
     const navigation = document.querySelector("#navigation");
     const hamburger = document.querySelector("#hamburger");
@@ -61,17 +79,17 @@ const Header = () => {
         </div>
         <div className={style.links} id="navigation">
           <ul>
-            <li onClick={() => handleCloseMenu()}>
-              <a href="#services">خدمــاتنـا</a>
+            <li onClick={() => handleCloseMenu()} className="overflow-hidden">
+              <a href="#services" className="link__6782">خدمــاتنـا</a>
             </li>
-            <li onClick={() => handleCloseMenu()}>
-              <a href="#team">فريـقــنا</a>
+            <li onClick={() => handleCloseMenu()} className="overflow-hidden">
+              <a href="#team" className="link__6782">فريـقــنا</a>
             </li>
-            <li onClick={() => handleCloseMenu()}>
-              <a href="#testimonial">أراء العمـلاء</a>
+            <li onClick={() => handleCloseMenu()} className="overflow-hidden">
+              <a href="#testimonial" className="link__6782">أراء العمـلاء</a>
             </li>
-            <li onClick={() => handleCloseMenu()}>
-              <a href="#contact">تواصـل معنـا</a>
+            <li onClick={() => handleCloseMenu()} className="overflow-hidden">
+              <a href="#contact" className="link__6782">تواصـل معنـا</a>
             </li>
           </ul>
         </div>

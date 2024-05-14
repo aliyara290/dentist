@@ -61,8 +61,14 @@
     background-color: var(--dark-blue);
     color: var(--white);
 }
-
-@media (max-width: 600px) {
+.stretched {
+    color: var(--white);
+}
+.stretched a {
+    font-weight: 700;
+    text-decoration: underline;
+}
+@media (max-width: 790px) {
     .links {
         display: none;
     }

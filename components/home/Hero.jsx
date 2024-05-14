@@ -1,21 +1,45 @@
-import style from '@/styles/home/hero.module.css'
-
+"use client";
+import { useEffect } from "react";
+import style from "@/styles/home/hero.module.css";
+import gsap from "gsap";
 
 const Hero = () => {
-    return ( 
-        <div className={style.content} id='hero'>
-            <div className={style.container}>
-                <div className={style.body}>
-                    <div>الثقـــــــة و الآمـــــــــان</div>
-                    <div>أســــــــــــــــــــــــــــــاس </div>
-                    <div>علاقتنـــــا معـــكــــــــم</div>
-                    <div className={style.btn}>
-                        <a href="tel:0643569435">إتصــــل بنــــا</a>
-                    </div>
-                </div>
-            </div>
+  useEffect(() => {
+    gsap.fromTo(
+      ".ov-58",
+      {
+        y: "100%",
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        delay: 1.2,
+        duration: 0.3,
+        stagger: 0.4,
+      }
+    );
+  }, []);
+  return (
+    <div className={style.content} id="hero">
+      <div className={style.container}>
+        <div className={style.body}>
+          <div className="overflow-hidden">
+            <div className="ov-58">الثقـــــــة و الآمـــــــــان</div>
+          </div>
+          <div className="overflow-hidden">
+            <div className="ov-58">أســــــــــــــــــــــــــــــاس </div>
+          </div>
+          <div className="overflow-hidden">
+            <div className="ov-58">علاقتنـــــا معـــكــــــــم</div>
+          </div>
+          <div className={`${style.btn} ov-58`}>
+            <a href="tel:0643569435">إتصــــل بنــــا</a>
+          </div>
         </div>
-     );
-}
- 
+      </div>
+    </div>
+  );
+};
+
 export default Hero;

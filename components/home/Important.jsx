@@ -1,55 +1,126 @@
+"use client";
+import { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import style from "@/styles/home/important.module.css";
 import Image from "next/image";
 
 const Important = () => {
+  // useEffect(() => {
+  //   gsap.registerPlugin(ScrollTrigger);
+  //   gsap.fromTo(
+  //     ".text__7429",
+  //     {
+  //       y: "100%",
+  //       opacity: 0,
+  //     },
+  //     {
+  //       y: 0,
+  //       opacity: 1,
+  //       duration: 0.5,
+  //       stagger: 0.3,
+  //       scrollTrigger: {
+  //         trigger: ".text__7429",
+  //         start: "bottom bottom",
+  //         end: "bottom center",
+  //         ease: "power4.inOut",
+  //       },
+  //     }
+  //   );
+  // }, []);
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.fromTo(
+      ".pic__74g89",
+      {
+        y: "100%",
+        opacity: 0,
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 0.5,
+        stagger: 0.3,
+        scrollTrigger: {
+          trigger: ".pic__74g89",
+          start: "bottom bottom",
+          end: "bottom center",
+          ease: "power4.inOut",
+        },
+        onComplete: () => {
+          gsap.fromTo(
+            ".text__7429",
+            {
+              y: "100%",
+              opacity: 0,
+            },
+            {
+              y: 0,
+              opacity: 1,
+              duration: 0.5,
+              stagger: 0.3,
+              scrollTrigger: {
+                trigger: ".text__7429",
+                start: "bottom bottom",
+                end: "bottom center",
+                ease: "power4.inOut",
+              },
+            }
+          );
+        },
+      }
+    );
+  }, []);
   return (
     <div className={style.content}>
       <div className={style.container}>
         <div className={style.pics}>
           <div className={style.row}>
-            <div className={style.pic}>
-                <Image 
-                    src={'/images/random/001.jpg'}
-                    alt="pic"
-                    width={200}
-                    height={200}
-                />
+            <div className={`${style.pic} pic__74g89`}>
+              <Image
+                src={"/images/random/001.jpg"}
+                alt="pic"
+                width={200}
+                height={200}
+              />
             </div>
-            <div className={style.pic}>
-                <Image 
-                    src={'/images/random/002.jpg'}
-                    alt="pic"
-                    width={200}
-                    height={200}
-                />
+            <div className={`${style.pic} pic__74g89`}>
+              <Image
+                src={"/images/random/002.jpg"}
+                alt="pic"
+                width={200}
+                height={200}
+              />
             </div>
           </div>
           <div className={style.row_2}>
-          <div className={style.pic}>
-                <Image 
-                    src={'/images/random/003.jpg'}
-                    alt="pic"
-                    width={200}
-                    height={200}
-                />
+            <div className={`${style.pic} pic__74g89`}>
+              <Image
+                src={"/images/random/003.jpg"}
+                alt="pic"
+                width={200}
+                height={200}
+              />
             </div>
-            <div className={style.pic}>
-                <Image 
-                    src={'/images/random/005.jpg'}
-                    alt="pic"
-                    width={200}
-                    height={200}
-                />
+            <div className={`${style.pic} pic__74g89`}>
+              <Image
+                src={"/images/random/005.jpg"}
+                alt="pic"
+                width={200}
+                height={200}
+              />
             </div>
           </div>
         </div>
         <div className={style.body}>
           <div className={style.heading}>
-            <h1>العنــاية بالأسنان مهمة لصحتـك العـامة وعــافيتك</h1>
+            <h1 className="text__7429">
+              العنــاية بالأسنان مهمة لصحتـك العـامة وعــافيتك
+            </h1>
           </div>
           <div className={style.lists}>
             <ul>
-              <li>
+              <li className="text__7429">
                 <div className={style.symbol}>
                   <svg
                     data-name="Layer 1"
@@ -82,7 +153,7 @@ const Important = () => {
                 </div>
               </li>
               <br />
-              <li>
+              <li className="text__7429">
                 <div className={style.symbol}>
                   <svg
                     data-name="Layer 1"
@@ -115,7 +186,7 @@ const Important = () => {
                 </div>
               </li>
               <br />
-              <li>
+              <li className="text__7429">
                 <div className={style.symbol}>
                   <svg
                     data-name="Layer 1"

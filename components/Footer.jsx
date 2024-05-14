@@ -21,8 +21,12 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+        <div className={style.stretched}>
+          <span>مصمم من قبل <a href="https://stretchedweb.com" target="_blank">Stretchedweb</a></span>
+        </div>
         <div className={style.return}>
-            <a href="#hero">➡</a></div>
+          <a href="#hero">➡</a>
+        </div>
       </div>
     </div>
   );
