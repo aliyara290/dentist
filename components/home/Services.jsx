@@ -18,12 +18,12 @@ const Services = () => {
       {
         y: 0,
         opacity: 1,
-        delay: 0.3,
-        duration: 0.2,
-        stagger: 0.2,
+        duration: 1,
+        // stagger: 0.2,
         onComplete: () => {
           gsap.to(".card_img__824", {
             rotate: 360,
+            opacity: 1,
           });
         },
         scrollTrigger: {

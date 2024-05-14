@@ -52,6 +52,7 @@
     padding: 2px 10px;
     position: relative;
     font-family: 'Expo-Arabic';
+    line-height: 3;
 }
 
 .links ul li a::after {
@@ -111,6 +112,7 @@
         padding: 2px 10px;
         position: relative;
         font-family: 'Expo-Arabic';
+        line-height: normal;
     }
 }
 

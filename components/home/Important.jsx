@@ -6,28 +6,6 @@ import style from "@/styles/home/important.module.css";
 import Image from "next/image";
 
 const Important = () => {
-  // useEffect(() => {
-  //   gsap.registerPlugin(ScrollTrigger);
-  //   gsap.fromTo(
-  //     ".text__7429",
-  //     {
-  //       y: "100%",
-  //       opacity: 0,
-  //     },
-  //     {
-  //       y: 0,
-  //       opacity: 1,
-  //       duration: 0.5,
-  //       stagger: 0.3,
-  //       scrollTrigger: {
-  //         trigger: ".text__7429",
-  //         start: "bottom bottom",
-  //         end: "bottom center",
-  //         ease: "power4.inOut",
-  //       },
-  //     }
-  //   );
-  // }, []);
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     gsap.fromTo(
@@ -39,8 +17,8 @@ const Important = () => {
       {
         y: 0,
         opacity: 1,
-        duration: 0.5,
-        stagger: 0.3,
+        duration: 0.2,
+        stagger: 0.2,
         scrollTrigger: {
           trigger: ".pic__74g89",
           start: "bottom bottom",
@@ -57,8 +35,8 @@ const Important = () => {
             {
               y: 0,
               opacity: 1,
-              duration: 0.5,
-              stagger: 0.3,
+              duration: 0.2,
+              stagger: 0.2,
               scrollTrigger: {
                 trigger: ".text__7429",
                 start: "bottom bottom",

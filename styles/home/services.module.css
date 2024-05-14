@@ -39,6 +39,9 @@
 .icon {
   padding-bottom: 25px;
 }
+.icon img {
+  opacity: 0;
+}
 .title {
   font-size: var(--fz-lg);
   font-weight: 500;

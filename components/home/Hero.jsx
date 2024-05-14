@@ -16,7 +16,7 @@ const Hero = () => {
         opacity: 1,
         delay: 1.2,
         duration: 0.3,
-        stagger: 0.4,
+        stagger: 0.2,
       }
     );
   }, []);
