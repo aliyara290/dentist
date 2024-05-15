@@ -1,3 +1,7 @@
+"use client";
+import { useEffect } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import style from "@/styles/home/testimonial.module.css";
 import Image from "next/image";
 import Heading from "@/components/Heading";
@@ -5,6 +9,25 @@ import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 
 const Testimonial = () => {
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.fromTo(".testimonial_jhe6", {
+      y: '40%',
+      opacity: 0,
+    }, {
+        opacity: 1,
+      y: 0,
+      duration: 0.4,
+      trigger: 0.5,
+      delay: 0.3,
+      scrollTrigger: {
+        trigger: ".testimonial_jhe6",
+        start: "center bottom",
+        end: "bottom center",
+        ease: "power4.inOut",
+      },
+    });
+  }, []);
   const testimonials = [
     {
       img: "/images/clients/02.jpg",
@@ -80,7 +103,7 @@ const Testimonial = () => {
             //     customTransition="all .9s ease"
             //     removeArrowOnDeviceType={["tablet", "mobile"]}
             //   >
-            <div className={style.card} key={index}>
+            <div className={`${style.card} testimonial_jhe6`} key={index}>
               <div className={style.top}>
                 <div className={style.pic}>
                   <Image src={`${card.img}`} alt="pic" width={50} height={50} />
