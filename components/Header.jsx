@@ -21,6 +21,7 @@ const Header = () => {
       }
     );
   }, []);
+
   const handleClick = () => {
     const navigation = document.querySelector("#navigation");
     const hamburger = document.querySelector("#hamburger");
@@ -70,13 +71,16 @@ const Header = () => {
               <a href="#services" className="link__6782">خدمــاتنـا</a>
             </li>
             <li onClick={() => handleCloseMenu()} className="overflow-hidden">
+              <a href="#advices" className="link__6782">نصـائحنــا</a>
+            </li>
+            <li onClick={() => handleCloseMenu()} className="overflow-hidden">
               <a href="#team" className="link__6782">فريـقــنا</a>
             </li>
             <li onClick={() => handleCloseMenu()} className="overflow-hidden">
-              <a href="#testimonial" className="link__6782">أراء العمـلاء</a>
+              <a href="#contact" className="link__6782">تواصـل معنـا</a>
             </li>
             <li onClick={() => handleCloseMenu()} className="overflow-hidden">
-              <a href="#contact" className="link__6782">تواصـل معنـا</a>
+              <a href="#faq" className="link__6782">الأسئلة الشائعة</a>
             </li>
           </ul>
         </div>

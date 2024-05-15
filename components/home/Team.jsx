@@ -30,8 +30,8 @@ const Team = () => {
     <div className={style.content} id="team">
       <div className={style.container}>
         <Heading
-          topHeading={"شركائك في الرعاية"}
-          botHeading={"الصحية السنية"}
+          topHeading={"جَيشنا"}
+          botHeading={"فخدمتك"}
           centerHeading={true}
           showSubHeading={false}
         />
@@ -53,6 +53,20 @@ const Team = () => {
           <div className={style.card}>
             <div className={style.pic}>
               <Image
+                src={"/images/team/03.jpg"}
+                alt="pic"
+                width={600}
+                height={600}
+              />
+            </div>
+            <div className={style.details}>
+              <h3 className="team_det__03r">ندى زايد</h3>
+              <span className="team_det__03r">جامعة الباحة للعلوم الطبية</span>
+            </div>
+          </div>
+          <div className={style.card}>
+            <div className={style.pic}>
+              <Image
                 src={"/images/team/02.jpg"}
                 alt="pic"
                 width={600}
@@ -64,20 +78,7 @@ const Team = () => {
               <span className="team_det__03r">جامعة جازان للعلوم الطبية</span>
             </div>
           </div>
-          <div className={style.card}>
-            <div className={style.pic}>
-              <Image
-                src={"/images/team/03.jpg"}
-                alt="pic"
-                width={600}
-                height={600}
-              />
-            </div>
-            <div className={style.details}>
-              <h3 className="team_det__03r">يوسف الخضيري </h3>
-              <span className="team_det__03r">جامعة الباحة للعلوم الطبية</span>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>

@@ -50,7 +50,7 @@ const Important = () => {
     );
   }, []);
   return (
-    <div className={style.content}>
+    <div className={style.content} id="advices">
       <div className={style.container}>
         <div className={style.pics}>
           <div className={style.row}>
@@ -58,16 +58,16 @@ const Important = () => {
               <Image
                 src={"/images/random/001.jpg"}
                 alt="pic"
-                width={200}
-                height={200}
+                width={600}
+                height={600}
               />
             </div>
             <div className={`${style.pic} pic__74g89`}>
               <Image
                 src={"/images/random/002.jpg"}
                 alt="pic"
-                width={200}
-                height={200}
+                width={600}
+                height={600}
               />
             </div>
           </div>
@@ -76,16 +76,16 @@ const Important = () => {
               <Image
                 src={"/images/random/003.jpg"}
                 alt="pic"
-                width={200}
-                height={200}
+                width={600}
+                height={600}
               />
             </div>
             <div className={`${style.pic} pic__74g89`}>
               <Image
                 src={"/images/random/005.jpg"}
                 alt="pic"
-                width={200}
-                height={200}
+                width={600}
+                height={600}
               />
             </div>
           </div>

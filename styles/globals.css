@@ -8,6 +8,9 @@
   margin: 0;
   -webkit-tap-highlight-color: transparent;
 }
+.card.active .answer {
+  display: block;
+}
 :root {
   --blue: #0080F7;
   --dark-blue: #0357a4;

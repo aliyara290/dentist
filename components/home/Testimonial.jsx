@@ -89,7 +89,7 @@ const Testimonial = () => {
     <div className={style.content} id="testimonial">
       <div className={style.container}>
       <Heading
-          topHeading={"ما يقوله عملاؤنا"}
+          topHeading={'ما الذي قالوه'}
           botHeading={"عنا"}
           centerHeading={true}
           showSubHeading={false}
