@@ -7,33 +7,25 @@ import Image from "next/image";
 import Heading from "@/components/Heading";
 
 const Team = () => {
-    useEffect(() => {
-        gsap.registerPlugin(ScrollTrigger);
-        gsap.to(
-          ".team_pic__nc34",
-          {
-              borderTopLeftRadius: '50%',
-              borderTopRightRadius: '50%',
-            y: '100%',
-            duration: 1,
-            stagger: 0.2,
-            onComplete: () => {
-                gsap.to('.team_det__03r', {
-                    opacity: 1,
-                    y: 0,
-                    duration: 0.2,
-                    trigger: 0.2,
-                })
-            },
-            scrollTrigger: {
-              trigger: ".team_pic__nc34",
-              start: "center bottom",
-              end: "bottom center",
-              ease: "power4.inOut",
-            },
-          }
-        );
-      }, []);
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.fromTo(".team_det__03r", {
+      y: '100%',
+      opacity: 0,
+    }, {
+        opacity: 1,
+      y: 0,
+      duration: 0.4,
+      trigger: 0.2,
+      delay: 0.3,
+      scrollTrigger: {
+        trigger: ".team_det__03r",
+        start: "center bottom",
+        end: "bottom center",
+        ease: "power4.inOut",
+      },
+    });
+  }, []);
   return (
     <div className={style.content} id="team">
       <div className={style.container}>
@@ -46,14 +38,12 @@ const Team = () => {
         <div className={style.cards}>
           <div className={style.card}>
             <div className={style.pic}>
-                <Image
-                  src={"/images/team/01.jpg"}
-                  alt="pic"
-                  width={240}
-                  height={300}
-                />
-              <div className={`${style.overllay} team_pic__nc34`}>
-              </div>
+              <Image
+                src={"/images/team/01.jpg"}
+                alt="pic"
+                width={240}
+                height={300}
+              />
             </div>
             <div className={style.details}>
               <h3 className="team_det__03r">محمد العوادي</h3>
@@ -62,14 +52,12 @@ const Team = () => {
           </div>
           <div className={style.card}>
             <div className={style.pic}>
-                <Image
-                  src={"/images/team/02.jpg"}
-                  alt="pic"
-                  width={240}
-                  height={300}
-                />
-              <div className={`${style.overllay} team_pic__nc34`}>
-              </div>
+              <Image
+                src={"/images/team/02.jpg"}
+                alt="pic"
+                width={240}
+                height={300}
+              />
             </div>
             <div className={style.details}>
               <h3 className="team_det__03r">عبد الله الجمالي</h3>
@@ -78,14 +66,12 @@ const Team = () => {
           </div>
           <div className={style.card}>
             <div className={style.pic}>
-                <Image
-                  src={"/images/team/03.jpg"}
-                  alt="pic"
-                  width={240}
-                  height={300}
-                />
-              <div className={`${style.overllay} team_pic__nc34`}>
-              </div>
+              <Image
+                src={"/images/team/03.jpg"}
+                alt="pic"
+                width={240}
+                height={300}
+              />
             </div>
             <div className={style.details}>
               <h3 className="team_det__03r">يوسف الخضيري </h3>

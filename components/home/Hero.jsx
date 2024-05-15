@@ -25,13 +25,13 @@ const Hero = () => {
       <div className={style.container}>
         <div className={style.body}>
           <div className="overflow-hidden">
-            <div className="ov-58">الثقـــــــة و الآمـــــــــان</div>
+            <div className="ov-58 opacity-0">الثقـــــــة و الآمـــــــــان</div>
           </div>
           <div className="overflow-hidden">
-            <div className="ov-58">أســــــــــــــــــــــــــــــاس </div>
+            <div className="ov-58 opacity-0">أســــــــــــــــــــــــــــــاس </div>
           </div>
           <div className="overflow-hidden">
-            <div className="ov-58">علاقتنـــــا معـــكــــــــم</div>
+            <div className="ov-58 opacity-0">علاقتنـــــا معـــكــــــــم</div>
           </div>
           <div className={`${style.btn} ov-58`}>
             <a href="tel:0643569435">إتصــــل بنــــا</a>
