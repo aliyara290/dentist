@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import gsap from "gsap";
 import style from "@/styles/header.module.css";
 import Image from "next/image";
@@ -33,12 +33,32 @@ const Header = () => {
     navigation.classList.remove(`${style.active}`);
     hamburger.classList.remove(`${style.active}`);
   };
+  const [logoSrc, setLogoSrc] = useState('/images/logo.svg');
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const heroHeight = document.getElementById('hero')
+      const scrolled = window.scrollY;
+      const scrollThreshold = heroHeight.offsetHeight;
+      if (scrolled >= scrollThreshold) {
+        setLogoSrc('/images/logo-blue.svg');
+        const hamColor = document.querySelector('.Ham-col')
+        hamColor.style.fill = 'var(--blue)'
+      } else {
+        setLogoSrc('/images/logo.svg');
+        const hamColor = document.querySelector('.Ham-col')
+        hamColor.style.fill = 'var(--white)'
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
   return (
     <div className={style.content}>
       <div className={style.container}>
         <div className={style.logo}>
          <Image 
-         src={'/images/logo.svg'}
+         src={`${logoSrc}`}
          alt="pic"
          width={60}
          height={60}
@@ -73,6 +93,7 @@ const Header = () => {
             width={30}
             height={30}
             fill="var(--white)"
+            className="Ham-col"
           >
             <rect width="15" height="2" className={style.bar} />
             <rect y="4" width="15" height="2" className={style.bar_two} />

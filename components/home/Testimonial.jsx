@@ -19,7 +19,6 @@ const Testimonial = () => {
       y: 0,
       duration: 0.4,
       trigger: 0.5,
-      delay: 0.3,
       scrollTrigger: {
         trigger: ".testimonial_jhe6",
         start: "center bottom",

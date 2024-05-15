@@ -41,8 +41,8 @@ const Team = () => {
               <Image
                 src={"/images/team/01.jpg"}
                 alt="pic"
-                width={240}
-                height={300}
+                width={600}
+                height={600}
               />
             </div>
             <div className={style.details}>
@@ -55,8 +55,8 @@ const Team = () => {
               <Image
                 src={"/images/team/02.jpg"}
                 alt="pic"
-                width={240}
-                height={300}
+                width={600}
+                height={600}
               />
             </div>
             <div className={style.details}>
@@ -69,8 +69,8 @@ const Team = () => {
               <Image
                 src={"/images/team/03.jpg"}
                 alt="pic"
-                width={240}
-                height={300}
+                width={600}
+                height={600}
               />
             </div>
             <div className={style.details}>
