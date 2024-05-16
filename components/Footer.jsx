@@ -23,7 +23,7 @@ const Footer = () => {
               </p>
             </div>
             <div className='mt-5'>
-              <p className="text-white">صمم بواسطة <a href="https://stretchedweb.com" target="_blank" className="font-black text-blue-900">Stretchedweb</a></p>
+              <p className="text-white">صمم بواسطة <a href="https://stretchedweb.com" target="_blank" className="font-black text-white">Stretchedweb</a></p>
             </div>
           </div>
           <div className={style.left_part}>

@@ -138,6 +138,18 @@
         align-items: start;
         flex-direction: column;
     }
+    .social {
+        /* width: max-content;
+        margin: 0 auto; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .social ul li a span svg {
+        margin: 0 7px;
+    }
     .links {
         padding-bottom: 40px;
     }
