@@ -55,7 +55,6 @@
 }
 .heading h1 {
   opacity: 0;
-
 }
 .lists {
   padding-top: 30px;
@@ -95,5 +94,4 @@
     width: 90%;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   }
-
 }

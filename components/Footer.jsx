@@ -22,8 +22,17 @@ const Footer = () => {
                 لمنع الأمراض النظامية، مما يعكس دور الفم كمدخل للعافية.
               </p>
             </div>
-            <div className='mt-5'>
-              <p className="text-white">صمم بواسطة <a href="https://stretchedweb.com" target="_blank" className="font-black text-white">Stretchedweb</a></p>
+            <div className="mt-5">
+              <p className="text-white">
+                صمم بواسطة{" "}
+                <a
+                  href="https://stretchedweb.com"
+                  target="_blank"
+                  className="font-black text-white"
+                >
+                  Stretchedweb
+                </a>
+              </p>
             </div>
           </div>
           <div className={style.left_part}>
@@ -120,7 +129,11 @@ const Footer = () => {
               <h2>تابعنا على :</h2>
               <ul>
                 <li>
-                  <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="http://www.facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span>
                       <svg
                         id="Layer_1"
@@ -139,7 +152,11 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="http://www.instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span>
                       <svg
                         id="Layer_1"
@@ -166,7 +183,11 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="https://wa.me/+966113475934" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="https://wa.me/+966113475934"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span>
                       <svg
                         id="Layer_1"
@@ -185,7 +206,11 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="http://www.snapchat.com" target="_blank" rel="noopener noreferrer">
+                  <a
+                    href="http://www.snapchat.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     <span>
                       <svg
                         id="Layer_1"
