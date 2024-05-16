@@ -19,7 +19,7 @@
     z-index: 3;
     /* height: 400px; */
     background-color: var(--white);
-    border-radius: 10px;
+    border-radius: 12px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
