@@ -86,10 +86,14 @@
   .container {
     width: 90%;
   }
+  .body {
+    padding-right: 0;
+  }
 }
 @media (max-width: 500px) {
   .container {
     width: 90%;
     grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
   }
+
 }
