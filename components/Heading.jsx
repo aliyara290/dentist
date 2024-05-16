@@ -14,6 +14,7 @@ const Title = ({
   centerHeading,
   showSubHeading,
   showThirdHeading,
+  showBotHeading,
 }) => {
   const triggerRef = useRef(null);
 
@@ -64,9 +65,11 @@ const Title = ({
         <div className={style.part}>
           <h1 className="head_part">{topHeading}</h1>
         </div>
-        <div className={style.part}>
-          <h1 className="head_part">{botHeading}</h1>
-        </div>
+        {showBotHeading && (
+          <div className={style.part}>
+            <h1 className="head_part">{botHeading}</h1>
+          </div>
+        )}
         {showThirdHeading && (
           <div className={style.part}>
             <h1 className="head_part">{thirdHeading}</h1>

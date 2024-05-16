@@ -8,8 +8,8 @@
   margin: 0;
   -webkit-tap-highlight-color: transparent;
 }
-.card.active .answer {
-  display: block;
+svg.active {
+  rotate: 45deg;
 }
 :root {
   --blue: #0080F7;

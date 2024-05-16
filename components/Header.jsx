@@ -9,11 +9,9 @@ const Header = () => {
     gsap.fromTo(
       ".link__6782",
       {
-        x: "100%",
         opacity: 0,
       },
       {
-        x: 0,
         opacity: 1,
         delay: 0.3,
         duration: 0.2,
@@ -34,53 +32,63 @@ const Header = () => {
     navigation.classList.remove(`${style.active}`);
     hamburger.classList.remove(`${style.active}`);
   };
-  const [logoSrc, setLogoSrc] = useState('/images/logo.svg');
+  const [logoSrc, setLogoSrc] = useState("/images/logo.svg");
 
   useEffect(() => {
     const handleScroll = () => {
-      const heroHeight = document.getElementById('hero')
+      const heroHeight = document.getElementById("hero");
+      const navigation = document.querySelector("#navigation");
       const scrolled = window.scrollY;
-      const scrollThreshold = heroHeight.offsetHeight;
-      if (scrolled >= scrollThreshold) {
-        setLogoSrc('/images/logo-blue.svg');
-        const hamColor = document.querySelector('.Ham-col')
-        hamColor.style.fill = 'var(--blue)'
+      const scrollThreshold = heroHeight.offsetHeight - 50;
+      if (scrolled >= scrollThreshold && !navigation.classList.contains(`${style.active}`)) {
+        setLogoSrc("/images/logo-blue.svg");
+        const hamColor = document.querySelector(".Ham-col");
+        hamColor.style.fill = "var(--blue)";
+      } else if (handleClick == true) {
+        setLogoSrc("/images/logo.svg");
+        const hamColor = document.querySelector(".Ham-col");
+        hamColor.style.fill = "var(--white)";
       } else {
-        setLogoSrc('/images/logo.svg');
-        const hamColor = document.querySelector('.Ham-col')
-        hamColor.style.fill = 'var(--white)'
+        setLogoSrc("/images/logo.svg");
+        const hamColor = document.querySelector(".Ham-col");
+        hamColor.style.fill = "var(--white)";
       }
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
     <div className={style.content}>
       <div className={style.container}>
         <div className={style.logo}>
-         <Image 
-         src={`${logoSrc}`}
-         alt="pic"
-         width={60}
-         height={60}
-         />
+          <Image src={`${logoSrc}`} alt="pic" width={60} height={60} />
         </div>
         <div className={style.links} id="navigation">
           <ul>
             <li onClick={() => handleCloseMenu()} className="overflow-hidden">
-              <a href="#services" className="link__6782">خدمــاتنـا</a>
+              <a href="#services" className="link__6782">
+                خدمــاتنـا
+              </a>
             </li>
             <li onClick={() => handleCloseMenu()} className="overflow-hidden">
-              <a href="#advices" className="link__6782">نصـائحنــا</a>
+              <a href="#advices" className="link__6782">
+                نصـائحنــا
+              </a>
             </li>
             <li onClick={() => handleCloseMenu()} className="overflow-hidden">
-              <a href="#team" className="link__6782">فريـقــنا</a>
+              <a href="#team" className="link__6782">
+                فريـقــنا
+              </a>
             </li>
             <li onClick={() => handleCloseMenu()} className="overflow-hidden">
-              <a href="#contact" className="link__6782">تواصـل معنـا</a>
+              <a href="#contact" className="link__6782">
+                تواصـل معنـا
+              </a>
             </li>
             <li onClick={() => handleCloseMenu()} className="overflow-hidden">
-              <a href="#faq" className="link__6782">الأسئلة الشائعة</a>
+              <a href="#faq" className="link__6782">
+                الأسئــــلة الشــــائعـة
+              </a>
             </li>
           </ul>
         </div>

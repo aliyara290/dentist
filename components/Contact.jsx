@@ -5,7 +5,7 @@ const Contact = () => {
     <div className={style.content} id="contact">
       <div className={style.container}>
         <div className={style.card}>
-          <h1>إستشرنا</h1>
+          <h1>إستشــــرنـــــا</h1>
           <span>أحصل على إستشارة مجانية من طرف أمهر الخبراء..</span>
           <form action="">
             <div className={style.row}>

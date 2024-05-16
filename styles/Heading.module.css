@@ -1,5 +1,5 @@
 .content {
-  padding-bottom: 50px;
+  padding-bottom: 20px;
 }
 .sub_heading {
   display: flex;
@@ -39,7 +39,7 @@
   font-size: 2.3rem;
   font-family: "Expo-Arabic";
   font-weight: 600;
-  line-height: 1.3;
+  /* line-height: 1.3; */
   color: var(--blue);
   text-transform: uppercase;
   transform: translateY(100%);

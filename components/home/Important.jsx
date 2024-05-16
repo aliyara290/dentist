@@ -17,7 +17,7 @@ const Important = () => {
       {
         y: 0,
         opacity: 1,
-        duration: 0.2,
+        duration: 0.1,
         stagger: 0.2,
         scrollTrigger: {
           trigger: ".pic__74g89",
@@ -36,7 +36,7 @@ const Important = () => {
               y: 0,
               opacity: 1,
               duration: 0.2,
-              stagger: 0.2,
+              stagger: 0.1,
               scrollTrigger: {
                 trigger: ".text__7429",
                 start: "bottom bottom",
@@ -93,7 +93,7 @@ const Important = () => {
         <div className={style.body}>
           <div className={style.heading}>
             <h1 className="text__7429">
-              العنــاية بالأسنان مهمة لصحتـك العـامة وعــافيتك
+              العنــاية بالأسنان مهمة لصحتـك العـامة وعــافيتــــك
             </h1>
           </div>
           <div className={style.lists}>

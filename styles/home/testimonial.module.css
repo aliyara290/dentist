@@ -56,7 +56,6 @@
   border-radius: 5px;
   position: relative;
   transition: transform .4s ease;
-
 }
 .card:hover {
   transform: scale(1.03);

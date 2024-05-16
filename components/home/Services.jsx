@@ -73,12 +73,13 @@ const Services = () => {
     <div className={style.content} id="services">
       <div className={style.container}>
         <Heading
-          topHeading={" نقدم لكم مجمـوعة كـاملة من"}
+          topHeading={" نــــقدم لكم مجمـوعة كـاملة مـن"}
           botHeading={"خدمـات الترميم والتجميـل"}
-          thirdHeading={"للعنـاية بالفـم واللثة"}
+          thirdHeading={"للعنـاية بالفـم واللثــــة"}
           centerHeading={true}
           showSubHeading={false}
           showThirdHeading={true}
+          showBotHeading={true}
         />
         {/* <div className={style.heading}>
           نـحن نقدم مجمـوعة كـاملة من

@@ -75,12 +75,13 @@
   .hamburger {
     display: block;
     position: fixed;
-    top: 50px;
+    top: 40px;
     left: 30px;
     z-index: 2367273897629872;
   }
   .logo {
     position: fixed;
+    top: 32px;
   }
   .container {
     width: 90%;

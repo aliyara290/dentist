@@ -64,13 +64,3 @@
     width: 90%;
   }
 }
-@media (max-width: 500px) {
-  .heading div {
-    font-size: 1.8rem;
-  }
-}
-@media (max-width: 390px) {
-  .heading div {
-    font-size: 1.4rem;
-  }
-}

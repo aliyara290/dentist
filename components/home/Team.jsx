@@ -30,10 +30,10 @@ const Team = () => {
     <div className={style.content} id="team">
       <div className={style.container}>
         <Heading
-          topHeading={"جَيشنا"}
-          botHeading={"فخدمتك"}
+          topHeading={"جَــــــيشنــا فخــدمتــك"}
           centerHeading={true}
           showSubHeading={false}
+          showBotHeading={false}
         />
         <div className={style.cards}>
           <div className={style.card}>
@@ -46,7 +46,7 @@ const Team = () => {
               />
             </div>
             <div className={style.details}>
-              <h3 className="team_det__03r">محمد العوادي</h3>
+              <h3 className="team_det__03r">محمــــد العــــوادي</h3>
               <span className="team_det__03r">جامعة المجمعة للعلوم الطبية</span>
             </div>
           </div>
@@ -60,7 +60,7 @@ const Team = () => {
               />
             </div>
             <div className={style.details}>
-              <h3 className="team_det__03r">ندى زايد</h3>
+              <h3 className="team_det__03r">نــــدى زايــــد</h3>
               <span className="team_det__03r">جامعة الباحة للعلوم الطبية</span>
             </div>
           </div>
@@ -74,7 +74,7 @@ const Team = () => {
               />
             </div>
             <div className={style.details}>
-              <h3 className="team_det__03r">عبد الله الجمالي</h3>
+              <h3 className="team_det__03r">عبــــد اللــــه الجمــــالي</h3>
               <span className="team_det__03r">جامعة جازان للعلوم الطبية</span>
             </div>
           </div>
