@@ -28,7 +28,7 @@ const Footer = () => {
                 <a
                   href="https://stretchedweb.com"
                   target="_blank"
-                  className="font-black text-white"
+                  className="font-bold text-white underline"
                 >
                   Stretchedweb
                 </a>
